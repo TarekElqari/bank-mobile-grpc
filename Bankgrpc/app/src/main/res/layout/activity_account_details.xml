@@ -1,0 +1,66 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ma.emsi.bankgrpc.activities.AccountDetailsActivity"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etAccountId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Account ID"
+        android:backgroundTint="@color/primary_dark"
+        android:textColor="@color/primary_dark"
+        android:padding="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnFetchDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Fetch Details"
+        android:backgroundTint="@color/primary_dark"
+        android:textColor="@color/text_secondary"
+        app:layout_constraintTop_toBottomOf="@id/etAccountId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvAccountId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Account ID: N/A"
+        android:textSize="16sp"
+        android:textColor="@color/primary_dark"
+        android:padding="8dp"
+        android:background="@drawable/background_statistics"
+        app:layout_constraintTop_toBottomOf="@id/btnFetchDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvAccountDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Account Details: N/A"
+        android:textSize="14sp"
+        android:textColor="@color/text_primary"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tvAccountId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

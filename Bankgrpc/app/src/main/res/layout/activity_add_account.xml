@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ma.emsi.bankgrpc.activities.AddAccountActivity">
+
+    <EditText
+        android:id="@+id/etSolde"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Solde"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/etDateCreation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Date Creation (YYYY-MM-DD)"
+        app:layout_constraintTop_toBottomOf="@id/etSolde"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="16dp" />
+
+    <Spinner
+        android:id="@+id/spinnerType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/account_types"
+        app:layout_constraintTop_toBottomOf="@id/etDateCreation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnSaveAccount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Save Account"
+        app:layout_constraintTop_toBottomOf="@id/spinnerType"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
